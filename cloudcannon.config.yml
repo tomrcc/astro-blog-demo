@@ -1,6 +1,7 @@
 paths:
   static: public
   uploads: public/uploads
+  data: data
 
 collections_config:
   posts:
@@ -15,6 +16,10 @@ collections_config:
     icon: laptop
     _enabled_editors:
       - visual
+  data:
+    path: data
+    name: Data
+    icon: analytics
 
 timezone: Pacific/Auckland
 
@@ -22,3 +27,25 @@ markdown:
   engine: commonmark
   options:
     gfm: true
+
+data_config:
+  colors:
+    path: data/colors.json
+
+_inputs:
+  background_color:
+    type: select
+    options:
+      values: data.colors
+      value_key: value
+      preview:
+        text:
+          - key: name
+  text_color:
+    type: select
+    options:
+      values: data.colors
+      value_key: value
+      preview:
+        text:
+          - key: name

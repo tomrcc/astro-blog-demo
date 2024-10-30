@@ -10,9 +10,11 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
+  background_color: '#ffffff'
+  text_color: '#000000'
   greeting_info:
     messages: []
-    heading_text: 
+    heading_text:
 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
@@ -20,3 +22,5 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  heading_text:
+    type: textarea

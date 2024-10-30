@@ -2,6 +2,8 @@
 title: Home
 content_blocks:
   - _bookshop_name: Hero
+    background_color: '#ff0000'
+    text_color: '#f0f000'
     greeting_info:
       messages:
         - Hej
@@ -26,7 +28,7 @@ content_blocks:
         mollit anim id est laborum.
       text_color: '#393939'
     image:
-      image_path: /src/assets/images/undraw-hello.svg
+      image_path: /src/assets/images/bear-500.jpeg
       alt_text: An image
     flipped: true
 ---
