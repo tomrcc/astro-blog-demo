@@ -15,6 +15,9 @@ collections_config:
         name: New Page
         path: schemas/post.md
         remove_extra_inputs: false
+    _inputs:
+      url:
+        type: image
   pages:
     path: src/content/pages
     name: Pages
