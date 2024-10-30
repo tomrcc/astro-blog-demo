@@ -36,6 +36,15 @@ collections_config:
 
 timezone: Pacific/Auckland
 
+collection_groups:
+  - heading: Content
+    collections:
+      - pages
+      - posts
+  - heading: Data Files
+    collections:
+      - data
+
 markdown:
   engine: commonmark
   options:
