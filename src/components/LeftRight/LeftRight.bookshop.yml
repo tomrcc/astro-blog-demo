@@ -36,6 +36,11 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  image_path:
+    type: image
+    options:
+      static: ''
+      uploads: 'src/assets/images'
   heading:
     options:
       preview:
