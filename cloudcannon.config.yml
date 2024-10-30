@@ -10,12 +10,22 @@ collections_config:
     icon: newspaper
     _enabled_editors:
       - content
+    schemas:
+      default:
+        name: New Page
+        path: schemas/post.md
+        remove_extra_inputs: false
   pages:
     path: src/content/pages
     name: Pages
     icon: laptop
     _enabled_editors:
       - visual
+    schemas:
+      default:
+        name: New Page
+        path: schemas/page.md
+        remove_extra_inputs: false
   data:
     path: data
     name: Data
@@ -31,6 +41,29 @@ markdown:
 data_config:
   colors:
     path: data/colors.json
+
+file_config:
+  - glob: data/colors.json
+    _structures:
+      color:
+        values:
+          - value:
+              name:
+              value:
+            preview:
+              icon: palette
+    _inputs:
+      $:
+        type: array
+        label: Colors
+        comment: Set the colors available in the color selectors throughout the site.
+        options:
+          structures: _structures.color
+      value:
+        type: color
+      name:
+        type: text
+        comment: What is seen in the color selector dropdown.
 
 _inputs:
   background_color:
