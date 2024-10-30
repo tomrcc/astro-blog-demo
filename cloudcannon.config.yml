@@ -1,0 +1,18 @@
+collections_config:
+  src_pages_posts:
+    path: src/pages/posts
+    name: Src Pages Posts
+    icon: sports_esports
+  pages:
+    path: ''
+    name: Pages
+    icon: wysiwyg
+    disable_url: true
+paths:
+  static: public
+  uploads: public/uploads
+timezone: Pacific/Auckland
+markdown:
+  engine: commonmark
+  options:
+    gfm: true
