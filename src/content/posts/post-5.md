@@ -6,7 +6,7 @@ description: A new post
 author: Tom
 image:
   url: /images/bear-600.jpeg
-  alt:
+  alt: Two bears
 tags:
   - Example tag
   - A new one
