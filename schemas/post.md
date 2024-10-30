@@ -6,5 +6,6 @@ author:
 image:
   url: 
   alt: 
-tags: []
+tags:
+  - Example tag
 ---
