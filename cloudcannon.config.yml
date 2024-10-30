@@ -1,5 +1,5 @@
 collections_config:
-  src_pages_posts:
+  posts:
     path: src/pages/posts
     name: Src Pages Posts
     icon: sports_esports

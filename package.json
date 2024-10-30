@@ -11,9 +11,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/preact": "^3.0.0",
+    "@astrojs/react": "^3.6.2",
     "@astrojs/rss": "^3.0.0",
-    "astro": "^3.1.1",
-    "preact": "^10.11.3"
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "astro": "^4.16.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
