@@ -14,6 +14,9 @@ importers:
       '@astrojs/rss':
         specifier: ^3.0.0
         version: 3.0.0
+      '@bookshop/astro-bookshop':
+        specifier: 3.12.0
+        version: 3.12.0(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.4.10)
       '@types/react':
         specifier: ^18.3.12
         version: 18.3.12
@@ -159,6 +162,24 @@ packages:
   '@babel/types@7.26.0':
     resolution: {integrity: sha512-Z/yiTPj+lDVnF7lWeKCIJzaIkI0vYO87dMpZ4bg4TDrFe4XXLFWL1TbXU27gBP3QccxV9mZICCrnjnYlJjXHOA==}
     engines: {node: '>=6.9.0'}
+
+  '@bookshop/astro-bookshop@3.12.0':
+    resolution: {integrity: sha512-GkjXIY31zZhVdZjFFJn6iAgdXwXHIUCiAxRb4udgocTwxcVpt5DVt6D9XNwBzkALDHyqxGoPWErbJvI08zbcJA==}
+    engines: {node: '>=14.16'}
+    peerDependencies:
+      react-dom: ^17.0.2 || ^18.0.0
+
+  '@bookshop/helpers@3.12.0':
+    resolution: {integrity: sha512-V1OJrSOScGgrdsNjePbVYeCWqCpkQDCXhED6Ujb3kWy+D7rGEhTt/MCzbdkT1G22l/5mwuzgDPdEnv10a02TKQ==}
+    engines: {node: '>=14.16'}
+
+  '@bookshop/vite-plugin-astro-bookshop@3.12.0':
+    resolution: {integrity: sha512-xAx+zAe4PbiIniCTgje5NWwRfLoEa5BDQJjVeY1ZZN0xd9/wFNnOPN1Zqa0fISZUGOk7Hj+EDdd3sTXg7eOq3A==}
+    engines: {node: '>=14.16'}
+
+  '@cloudcannon/remark-auto-import@1.0.1':
+    resolution: {integrity: sha512-YEzrpwiPaLW4bTKeRFpaLei8dektckg40lUbeK5K2wGUu/BInbFbW/HxGvxzINQ6qMPjCfNzSCWxmUqciQJGcQ==}
+    engines: {node: '>=14.16'}
 
   '@emnapi/runtime@1.3.1':
     resolution: {integrity: sha512-kEBmG8KyqtxJZv+ygbEim+KCGtIq1fC22Ms3S4ziXmYKm8uyoLX0MHONVKwp+9opg390VaKRNt4a7A9NwmpNhw==}
@@ -1817,6 +1838,31 @@ snapshots:
     dependencies:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
+
+  '@bookshop/astro-bookshop@3.12.0(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.4.10)':
+    dependencies:
+      '@astrojs/react': 3.6.2(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.4.10)
+      '@bookshop/helpers': 3.12.0
+      '@bookshop/vite-plugin-astro-bookshop': 3.12.0
+      '@cloudcannon/remark-auto-import': 1.0.1
+      react-dom: 18.3.1(react@18.3.1)
+    transitivePeerDependencies:
+      - '@types/react'
+      - '@types/react-dom'
+      - react
+      - supports-color
+      - vite
+
+  '@bookshop/helpers@3.12.0': {}
+
+  '@bookshop/vite-plugin-astro-bookshop@3.12.0':
+    dependencies:
+      '@babel/generator': 7.26.0
+      '@babel/parser': 7.26.1
+
+  '@cloudcannon/remark-auto-import@1.0.1':
+    dependencies:
+      fast-glob: 3.3.2
 
   '@emnapi/runtime@1.3.1':
     dependencies:
