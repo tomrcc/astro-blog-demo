@@ -1,0 +1,17 @@
+---
+import PageHelper from "../shared/astro/page.astro";
+import Layout from "./BaseLayout.astro";
+
+type Props = {
+  frontmatter: {
+    title: string;
+    content_blocks?: any[];
+  };
+};
+
+const props = Astro.props.frontmatter;
+---
+
+<Layout {...props}>
+  <PageHelper bookshop:live contentBlocks={props.content_blocks ?? []} />
+</Layout>

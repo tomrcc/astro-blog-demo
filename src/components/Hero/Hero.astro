@@ -1,0 +1,7 @@
+---
+import Greeting from "../Greeting";
+
+const { greeting_info } = Astro.props;
+---
+
+<Greeting client:load greeting_info={greeting_info} />

@@ -1,17 +1,19 @@
-collections_config:
-  posts:
-    path: src/pages/posts
-    name: Src Pages Posts
-    icon: sports_esports
-  pages:
-    path: ''
-    name: Pages
-    icon: wysiwyg
-    disable_url: true
 paths:
   static: public
   uploads: public/uploads
+
+collections_config:
+  posts:
+    path: src/content/posts
+    name: Posts
+    icon: newspaper
+  pages:
+    path: src/content/pages
+    name: Pages
+    icon: laptop
+
 timezone: Pacific/Auckland
+
 markdown:
   engine: commonmark
   options:
