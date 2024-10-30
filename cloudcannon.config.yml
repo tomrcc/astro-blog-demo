@@ -7,10 +7,14 @@ collections_config:
     path: src/content/posts
     name: Posts
     icon: newspaper
+    _enabled_editors:
+      - content
   pages:
     path: src/content/pages
     name: Pages
     icon: laptop
+    _enabled_editors:
+      - visual
 
 timezone: Pacific/Auckland
 
